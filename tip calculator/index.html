@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tip calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="bill-calculator">
+        <h1>Bill calculator</h1>
+        <form name="calculator" id="calculator">
+          <div class="field-container">
+            <label for="bill">How much was your bill($)</label>
+            <input id="bill"  type="number" name="bill" placeholder="$" required>
+          </div>
+          <div class="field-container">
+            <label for="percentage">Tip amount(%)</label>
+            <input id="percentage" type="number" name="percentage" placeholder="%" max="100"></input>
+          </div>
+          <div class="field-container">
+            <label for="customer-num">Number to spilt</label>
+            <input id="customer-num" type="number" name="customer-num" placeholder="1"  value="1" min="1"></input>
+          </div>
+          <div class="button-container">
+            <button type="submit" name= "calculate" id="btn-calc">Calculate</button>
+          </div>
+        </form>
+      </div>
+      <div id="result-container">
+        <h1>Your bill comes to</h1>
+        <form name="results" id="results">
+          <div class="field-container">
+            <label for="total-bill">Total bill</label>
+            <input for="total-bill" type="number" name="bill" placeholder="0" disabled></input>
+          </div>
+          <div class="field-container">
+            <label for="total-percentage">Total percentage</label>
+            <input for="total-percentage" type="number" name="percentage" placeholder="0">
+          </div>
+          <div class="field-container">
+            <label for="total-per-customer">Total percentage</label>
+            <input for="total-per-customer" type="number" name="customer" placeholder="0">
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src=js/script.js></script>
+  </body>
+</html>
