@@ -7,44 +7,46 @@
   </head>
   <body>
     <div class="container">
-      <div id="bill-calculator">
-        <h1>Bill calculator</h1>
-        <form name="calculator" id="calculator">
-          <div class="field-container">
-            <label for="bill">How much was your bill($)</label>
-            <input id="bill"  type="number" name="bill" placeholder="$" required>
-          </div>
-          <div class="field-container">
-            <label for="percentage">Tip amount(%)</label>
-            <input id="percentage" type="number" name="percentage" placeholder="%" max="100"></input>
-          </div>
-          <div class="field-container">
-            <label for="customer-num">Number to spilt</label>
-            <input id="customer-num" type="number" name="customer-num" placeholder="1"  value="1" min="1"></input>
-          </div>
-          <div class="button-container">
-            <button type="submit" name= "calculate" id="btn-calc">Calculate</button>
-          </div>
-        </form>
-      </div>
-      <div id="result-container">
-        <h1>Your bill comes to</h1>
-        <form name="results" id="results">
-          <div class="field-container">
-            <label for="total-bill">Total bill</label>
-            <input id="total-bill" type="number" name="bill" placeholder="0" disabled></input>
-          </div>
-          <div class="field-container">
-            <label for="total-percentage">Total Tip</label>
-            <input id="total-percentage" type="number" name="percentage" placeholder="0">
-          </div>
-          <div class="field-container">
-            <label for="total-per-customer">Total per person</label>
-            <input id="total-per-customer" type="number" name="customer" placeholder="0">
+      <div class="main">
+        <div id="bill-calculator" style=opacity:0.7;>
+          <h1>Bill calculator</h1>
+          <form name="calculator" id="calculator">
+            <div class="field-container">
+              <label for="bill">How much was your bill($)</label>
+              <input id="bill"  type="number" name="bill" placeholder="$" required>
+            </div>
+            <div class="field-container">
+              <label for="percentage">Tip amount(%)</label>
+              <input id="percentage" type="number" name="percentage" placeholder="%" max="100"></input>
+            </div>
+            <div class="field-container">
+              <label for="customer-num">Number to spilt</label>
+              <input id="customer-num" type="number" name="customer-num" placeholder="1"  value="1" min="1"></input>
+            </div>
+            <div class="button-container">
+              <button type="submit" name= "calculate" id="btn-calc">Calculate</button>
+            </div>
+          </form>
+        </div>
+        <div id="result-container" style=opacity:0.7;>
+          <h1>Your bill comes to</h1>
+          <form name="results" id="results">
+            <div class="field-container">
+              <label for="total-bill">Total bill</label>
+              <input id="total-bill" type="number" name="bill" placeholder="0" disabled></input>
+            </div>
+            <div class="field-container">
+              <label for="total-percentage">Total Tip</label>
+              <input id="total-percentage" type="number" name="percentage" placeholder="0">
+            </div>
+            <div class="field-container">
+              <label for="total-per-customer">Total per person</label>
+              <input id="total-per-customer" type="number" name="customer" placeholder="0">
 
-          </div>
-        </form>
-      </div>
+            </div>
+          </form>
+        </div>
+        </div>
     </div>
 
     <script src=js/script.js></script>
