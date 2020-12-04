@@ -82,7 +82,6 @@ input:disabled {
 .btn-small:focus {
   outline: none;
   border: none;
-  background-color: #2e864b;
 }
 
 .btn--purple {
@@ -124,10 +123,8 @@ input:disabled {
 
 .btn-text:link,
 .btn-text:visited {
-  color: #55c57a;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #55c57a;
   padding: 3px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
