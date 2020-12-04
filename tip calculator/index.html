@@ -8,7 +8,7 @@
   <body>
     <div class="container">
       <div class="main">
-        <div id="bill-calculator" style=opacity:0.7;>
+        <div id="bill-calculator" class="bill-calculator bill-container" style=opacity:0.7;>
           <h1>Bill calculator</h1>
           <form name="calculator" id="calculator">
             <div class="field-container">
@@ -24,11 +24,11 @@
               <input id="customer-num" type="number" name="customer-num" placeholder="1"  value="1" min="1"></input>
             </div>
             <div class="button-container">
-              <button type="submit" name= "calculate" id="btn-calc">Calculate</button>
+              <button class="btn--purple btn-small btn-text" type="submit" name= "calculate" id="btn-calc">Calculate</button>
             </div>
           </form>
         </div>
-        <div id="result-container" style=opacity:0.7;>
+        <div id="bill-calculator" class="result-container bill-calculator" style=opacity:0.7;>
           <h1>Your bill comes to</h1>
           <form name="results" id="results">
             <div class="field-container">
